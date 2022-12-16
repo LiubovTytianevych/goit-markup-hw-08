@@ -1,0 +1,28 @@
+//utils
+@import './utils/modern-normalize';
+@import './utils/variables';
+
+//base styles
+@import './base/base';
+@import './base/container';
+@import './base/reset';
+
+//components
+@import './components/section';
+@import './components/logo';
+@import './components/address';
+@import './components/footer';
+@import './components/modal';
+
+//layouts 
+@import './layouts/header';
+@import './layouts/nav-header';
+@import './layouts/banet__header';
+@import './layouts/features__container';
+@import './layouts/examples';
+@import './layouts/activity';
+@import './layouts/team';
+@import './layouts/socials';
+@import './layouts/customers';
+@import './layouts/filters__list';
+@import './layouts/project';

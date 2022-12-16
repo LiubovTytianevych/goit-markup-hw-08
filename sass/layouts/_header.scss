@@ -1,0 +1,10 @@
+.header__container {
+    display: flex;
+}
+.header {
+    border-bottom: 1px solid #ececec;
+}
+.header__item:not(:last-child) {
+    margin-right: 50px;
+    align-items: center;
+}

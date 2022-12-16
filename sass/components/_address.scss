@@ -1,0 +1,27 @@
+.address__list {
+    display: flex;
+    margin-left: auto;
+}
+.address__item:not(:last-child) {
+    margin-right: 50px;
+    align-items: center;
+}
+.address__link {
+    display: flex;
+    color: #757575;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__link:hover,
+.address__link:focus {
+    color:var(--color-primary); 
+}
+.address__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
