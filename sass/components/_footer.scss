@@ -3,7 +3,7 @@
     padding: 60px 0;  
 }
 .footer__container {
-    display: flex;
+    // display: flex;
     align-items: baseline;
 }
 .address {
@@ -60,7 +60,7 @@
     .footer__socials {
         width: 44px;
         height: 44px;
-        display: flex;
+        // display: flex;
         align-items: center;
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.1);
@@ -87,7 +87,7 @@
         margin-bottom: 20px; 
     }
     .form__content {
-        display: flex;
+        // display: flex;
     }
     .footer__button {
         display: flex;
@@ -124,3 +124,11 @@
         line-height: 1.2;
         color: rgba(255, 255, 255, 0.6);
     }
+
+    @media screen and (min-width: 480px) {
+       .footer {
+        width: 480px;
+        justify-content: center;
+        margin-top: 60px;
+    }
+}

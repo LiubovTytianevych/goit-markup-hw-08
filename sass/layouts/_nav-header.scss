@@ -1,10 +1,17 @@
 .nav__header {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 }
 .nav__list {
-    display: flex;
-    margin-left: 93px;
+    // display: flex;
+    // margin-left: 93px;
+}
+@media screen and (max-width:480px) {
+    .nav__list {
+        display: block;
+        width: 480px;
+        flex-direction: column;
+    } 
 }
 .nav__link {
     display: block;
@@ -35,4 +42,20 @@
     bottom: -2px;
     background-color: var(--color-primary);
     border-radius: 2px;
+}
+.menu__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.menu__button .icon-cross {
+    display: none;
+}
+.menu__button .is-open .icon-cross {
+    display: block;
+}
+.menu__button .is-open .icon-menu {
+    display: none;
 }

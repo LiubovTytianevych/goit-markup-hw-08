@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+     <header class="header">  
       <div class="header__container container">
         <nav class="nav__header">
           <a href="logo" class="logo"
@@ -33,6 +33,12 @@
               <a href="#Контакти" class="nav__link link">Контакти</a>
             </li>
           </ul>
+          <button type="button" class="menu__button is-open" data-menu-button>
+            <svg width="18.67" height="18.67" aria-label="">
+              <use class="icon-cross" href="./images/icons.svg#"></use>
+              <use class="icon-menu" href="./images/icons.svg#"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="address__list list">
           <li class="address__item">
@@ -53,7 +59,7 @@
       </div>
     </header>
     <main>
-      <section class="baner__header section">
+        <section class="baner__header section">  
         <div class="baner__container container">
           <h1 class="baner__text">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="baner__button" data-modal-open>
@@ -61,13 +67,13 @@
           </button>
         </div>
       </section>
-      <section class="features section">
+       <section class="features section"> 
         <div class="features__container container">
           <h2 hidden>Чим ми особливі</h2>
           <ul class="features__list list">
             <li class="features__item">
               <div class="features__wrapper">
-                <svg class="features-icon" width="70" height="70">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-group"></use>
                 </svg>
               </div>
@@ -79,7 +85,7 @@
             </li>
             <li class="features__item">
               <div class="features__wrapper">
-                <svg class="features-icon" width="70" height="70">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -91,7 +97,7 @@
             </li>
             <li class="features__item">
               <div class="features__wrapper">
-                <svg class="features-icon" width="70" height="70">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -102,7 +108,7 @@
             </li>
             <li class="features__item">
               <div class="features__wrapper">
-                <svg class="features-icon" width="70" height="70">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -115,7 +121,7 @@
           </ul>
         </div>
       </section>
-      <section class="examples section">
+       <!-- <section class="examples section"> 
         <div class="examples__container container">
           <h2 class="examples__title">Чим ми займаємося</h2>
           <ul class="examples__list list">
@@ -151,7 +157,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
       <section class="team section">
         <div class="team__container container">
           <h2 class="team__title">Наша команда</h2>
@@ -315,7 +321,7 @@
           </ul>
         </div>
       </section>
-      <section class="customers section">
+       <section class="customers section">  
         <div class="container">
           <h2 class="customers__title">Постійні клієнти</h2>
           <ul class="customers__list list">
@@ -361,7 +367,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+     <footer class="footer">  
       <div class="footer__container container">
         <div class="address-wrapper">
           <a href="logo" class="logo link"
@@ -494,6 +500,8 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    
   </body>
 </html>
