@@ -1,5 +1,10 @@
 .examples {
     padding-top: 0;
+    display: none;
+    @media screen  and (min-width: 1200px) {
+        width: 1200px;
+        display: block;
+    }
 }
 .examples__container {
     display: flexbox;
