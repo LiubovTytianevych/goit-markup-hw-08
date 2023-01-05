@@ -1,6 +1,7 @@
 //utils
 @import './utils/modern-normalize';
 @import './utils/variables';
+@import './utils/mixin';
 
 //base styles
 @import './base/base';
@@ -17,7 +18,7 @@
 //layouts 
 @import './layouts/header';
 @import './layouts/nav-header';
-@import './layouts/banet__header';
+@import './layouts/baner__header';
 @import './layouts/features__container';
 @import './layouts/examples';
 @import './layouts/activity';

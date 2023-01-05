@@ -3,13 +3,33 @@
     padding: 60px 0;  
 }
 .footer__container {
-    // display: flex;
+    text-align: center;
+    
+    @include mq(tablet) {
+    display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
+}
+@include mq(tablet-only) {
+justify-content: space-around;
+}
+@include mq(not-desktop) {
+    text-align: center;
+}
+}
+.address__wrapper {
+    @include mq(not-desktop) {
+margin-bottom: 60px;
+}
 }
 .address {
     font-style: normal;
     margin-top: 20px;
 }
+.address__list-footer {
+    margin-bottom: 60px;
+}
+
 .address__list-item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -32,8 +52,14 @@
 }
 
 .footer__link {
+    @include mq (mobile-only) {
+    margin-bottom: 60px;
+    }
+    @include mq(desktop){
     margin-left: 70px;
     }
+}
+
     .footer__title {
         font-weight: 700;
         color: #FFFFFF;
@@ -56,11 +82,16 @@
     .footer__icon-list {
         display: flex;
         gap: 10px;
+        
+        @include mq(mobile){
+        justify-content: center;
+        margin-bottom: 60px;
     }
+}
     .footer__socials {
         width: 44px;
         height: 44px;
-        // display: flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.1);
@@ -76,7 +107,8 @@
     }
     .footer__form {
         margin-left: auto;
-    }
+        }
+
     .title__social {
         font-weight: 700;
         font-size: 14px;
@@ -87,10 +119,15 @@
         margin-bottom: 20px; 
     }
     .form__content {
-        // display: flex;
-    }
-    .footer__button {
+        margin-top: 20px;
+       
+        @include mq(desktop) {
         display: flex;
+        align-items: center;
+    }
+}
+    .footer__button {
+        display: inline-flex;
         justify-content: center;
         align-items: center;
         margin-left: 12px;
@@ -111,24 +148,22 @@
         margin-left: 10px;
     }
     .footer__email {
-        width: 358px;
+        max-width: 450px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.15);
         filter: drop-shadow(0px 4px 4px rgba (0, 0, 0, 0.15 ));
         border-radius: 4px;
         background-color: #2f303a;
         padding: 15px 16px;
+@include mq(desktop) {
+    width: 538px;
+}
+        @include mq(not-desktop) {
+            margin-bottom: 20px;
+        }
     }
     .footer__email::placeholder {
         font-size: 16px;
         line-height: 1.2;
         color: rgba(255, 255, 255, 0.6);
     }
-
-    @media screen and (min-width: 480px) {
-       .footer {
-        width: 480px;
-        justify-content: center;
-        margin-top: 60px;
-    }
-}

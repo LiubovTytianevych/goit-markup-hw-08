@@ -3,14 +3,12 @@
 }
 .header {
     border-bottom: 1px solid #ececec;
+    @include mq(mobile-only) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 .header__item:not(:last-child) {
     margin-right: 50px;
     align-items: center;
-}
-@media screen and (max-width:480px){
-    .header__container {
-   width: 480px; 
-   flex-direction: column;
-}
 }

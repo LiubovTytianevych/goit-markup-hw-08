@@ -9,19 +9,26 @@
 @media screen  and (min-width: 1200px) {
     font-size: 36px;
 }
-
 }
 .customers__list {
-     display: flex;
-     gap: 30px;
+    @include card-set;
      margin-top: 30px;
-     flex-wrap: wrap;
-     justify-content: center;
     
 // desktop screen
 @media screen  and (min-width: 1200px) {
     margin-top: 50px;
 }
+}
+
+.customers__item {
+    @include card-set-item(2);
+
+    @media screen and (min-width: 768px) {
+        @include card-set-item(3);
+    }
+    @media screen and (min-width: 1200px){
+        @include card-set-item(6);
+    }
 }
 .customers__link {
     width: 210px;
@@ -38,14 +45,14 @@
    @media screen and (min-width: 760px)  {
     width: 226px;
 }
-// desktop screen
+  // desktop screen
 @media screen  and (min-width: 1200px) {
     width: 170px;
 
-}
-}
-.customers__link:hover,
-.customers__link:focus {
+&:hover,
+&:focus {
     fill: var(--color-button);
     border-color: var(--color-button);
+}
+}
 }

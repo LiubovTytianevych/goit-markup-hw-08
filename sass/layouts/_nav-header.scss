@@ -1,18 +1,24 @@
 .nav__header {
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
 }
 .nav__list {
-    // display: flex;
-    // margin-left: 93px;
-}
-@media screen and (max-width:480px) {
-    .nav__list {
-        display: block;
-        width: 480px;
-        flex-direction: column;
+        display: none;
+        // width: 480px;
+        // flex-direction: column;
+        
+        @include mq(tablet) {
+            display: flex;
+            margin-left: 93px;
+            flex-direction: row;
+        }
+        @include mq(desktop) {
+            display: flex;
+            margin-left: 93px;
+            flex-direction: row;
+        }
     } 
-}
+
 .nav__link {
     display: block;
     color:var(--color-text);
