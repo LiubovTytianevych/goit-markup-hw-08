@@ -259,11 +259,6 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 448px;
-  }
-}
 @media screen and (min-width: 768px) {
   .container {
     width: 767px;
@@ -418,6 +413,18 @@ img {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media screen and (max-width1199.98px) {
   .footer__container {
     text-align: center;
@@ -427,6 +434,13 @@ img {
 @media screen and (max-width1199.98px) {
   .address__wrapper {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address__wrapper {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1015,12 +1029,20 @@ img {
 }
 @media screen and (min-width: 480px) {
   .baner__header {
+    width: 480px;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .baner__header {
     width: 100%;
+    background-position: center;
   }
 }
 @media screen and (min-width: 1600px) {
   .baner__header {
     width: 1600px;
+    background-position: center;
   }
 }
 
@@ -1165,6 +1187,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .activity {
@@ -1199,12 +1227,10 @@ img {
 }
 
 .team__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
-team {
+.team {
   background-color: var(--color-section);
 }
 
@@ -1225,6 +1251,9 @@ team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: -30px;
@@ -1365,7 +1394,7 @@ team {
 }
 @media screen and (min-width: 760px) {
   .customers__link {
-    width: 226px;
+    width: 210px;
   }
 }
 @media screen and (min-width: 1200px) {

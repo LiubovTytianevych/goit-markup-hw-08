@@ -12,29 +12,32 @@
     
 
 @media screen and (min-width: 480px) {
-        width: 100%;
+    width: 480px;
+    background-position: center;
     } 
 
 @media  screen and (min-width:768px) {
-        // width: 767px;
+        width: 100%;
+        background-position: center;
     }
 
 @media screen and (min-width:1600px) {
         width: 1600px;
+        background-position: center;
     }
 }
 
 .baner__text {
-    color:var(--color-background);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    width: 696px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+        color:var(--color-background);
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        width: 696px;
+        margin: 0 auto;
+        margin-bottom: 30px;
 }   
 .baner__button {
     display: block;

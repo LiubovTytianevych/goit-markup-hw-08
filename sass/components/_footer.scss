@@ -10,6 +10,11 @@
     align-items: baseline;
     flex-wrap: wrap;
 }
+@include mq(desktop) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
 @include mq(tablet-only) {
 justify-content: space-around;
 }
@@ -21,7 +26,11 @@ justify-content: space-around;
     @include mq(not-desktop) {
 margin-bottom: 60px;
 }
+@include mq(desktop){
+    align-items: baseline;
 }
+}
+
 .address {
     font-style: normal;
     margin-top: 20px;
