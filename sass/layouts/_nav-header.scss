@@ -1,15 +1,16 @@
 .nav__header {
     display: flex;
     align-items: center;
+    
 }
 .nav__list {
         display: none;
         // width: 480px;
-        // flex-direction: column;
         
         @include mq(tablet) {
             display: flex;
             margin-left: 93px;
+            margin-right: 15px;
             flex-direction: row;
         }
         @include mq(desktop) {

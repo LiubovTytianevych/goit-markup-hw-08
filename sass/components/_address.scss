@@ -1,15 +1,16 @@
+
 .address__list {
     display: none;
     
     @include mq(tablet) {
        display: block;
-       margin-left: 96px;
        padding-top: 21px;
-    
+    //    margin-left: 96px;
     }
     @include mq(desktop) {
      display: flex;
     margin-left: auto;
+    align-items: center;
     }
     }
 
