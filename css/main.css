@@ -354,6 +354,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 0;
     margin-left: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -361,11 +362,19 @@ img {
   }
 }
 
-.address__item:not(:last-child) {
-  margin-right: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address__item:not(:last-child) {
+    margin-right: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .address__link {
@@ -377,10 +386,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 0.9;
+  font-size: 12px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  padding: 32px 0;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -413,18 +421,9 @@ img {
             align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 @media screen and (max-width1199.98px) {
@@ -440,9 +439,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .address__wrapper {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    text-align: start;
   }
 }
 
@@ -491,6 +488,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__link {
     margin-left: 70px;
+    text-align: start;
   }
 }
 
@@ -560,6 +558,20 @@ img {
 .footer__form {
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .footer__form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    margin-left: auto;
+  }
+}
 
 .title__social {
   font-weight: 700;
@@ -573,16 +585,6 @@ img {
 
 .form__content {
   margin-top: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .form__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 .footer__button {
@@ -615,7 +617,9 @@ img {
 }
 
 .footer__email {
+  margin-bottom: 20px;
   max-width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   -webkit-filter: drop-shadow(0px 4px 4px rgba 0, 0, 0, 0.15);
@@ -907,7 +911,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
 }
 
 .header {
@@ -1055,15 +1066,28 @@ img {
 
 .baner__text {
   color: var(--color-background);
+  width: 360px;
+  font-size: 26px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .baner__text {
+    width: 360px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .baner__text {
+    font-size: 44px;
+    width: 696px;
+  }
 }
 
 .baner__button {
@@ -1081,6 +1105,11 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .baner__button {
+    width: 200px;
+  }
 }
 
 .features__wrapper {
@@ -1163,7 +1192,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .examples {
-    width: 1200px;
     display: block;
   }
 }

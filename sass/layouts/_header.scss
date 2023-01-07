@@ -1,6 +1,10 @@
 .header__container {
     display: flex;
-    height: 80px;
+   
+    @include mq(tablet) {
+        display: flex;
+        text-align: center;
+    }
 }
 .header {
     border-bottom: 1px solid #ececec;

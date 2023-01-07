@@ -4,29 +4,35 @@
     
     @include mq(tablet) {
        display: block;
-       padding-top: 21px;
-    //    margin-left: 96px;
+     padding-top: 21px;
     }
     @include mq(desktop) {
      display: flex;
+     padding-top: 0;
     margin-left: auto;
     align-items: center;
     }
     }
 
 .address__item:not(:last-child) {
+@include mq(tablet) {
+    margin-bottom: 10px;
+    text-align: center;
+}
+@include mq(desktop) {
     margin-right: 50px;
     align-items: center;
+}
 }
 .address__link {
     display: flex;
     color: #757575;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 0.9;
+    font-size: 12px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
-    padding: 32px 0;
+    // padding: 32px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address__link:hover,
