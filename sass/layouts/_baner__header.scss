@@ -2,7 +2,7 @@
     margin: 0 auto;
     background-color: #2f303a;
     color: var(--color-background);
-    padding: 200px 0;
+    // padding: 200px 0;
     background-size: 1600px;
     max-width: 1600px;
     background-repeat: no-repeat;
@@ -14,19 +14,20 @@
 @media screen and (min-width: 480px) {
     width: 480px;
     background-position: center;
-    
+    padding: 118px 0;
     } 
 
 @media  screen and (min-width:768px) {
         width: 100%;
         background-position: center;
-       
+       padding: 118px 0;
         
     }
 
 @media screen and (min-width:1600px) {
         width: 1600px;
         background-position: center;
+        padding: 200px 0;
     }
 }
 

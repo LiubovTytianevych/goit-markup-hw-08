@@ -3,12 +3,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    width: 450px;
     min-height: 581px;
     padding: 40px;
     background-color: var(--color-background);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    @include mq(tablet) {
+        width: 450px;
+    }
+    @include mq(decktop) {
+        width: 528px;
+    }
 }
 .modal__close-button {
     display: flex;
@@ -119,6 +125,10 @@ outline: none;
      color: #757575;
      letter-spacing: 0.03em;
      gap: 8px;
+     @include mq(tablet) {
+        font-size: 12px;
+        
+     }
 }
 .form__check-box:checked + .checkbox__icon {
     background-color: #2196F3;
@@ -140,6 +150,9 @@ margin-right: 7px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(33, 150, 243, 1);
+    @include mq(tablet) {
+        font-size: 12px;
+    }
 }
          /* checkbox end */
 .button__submit {

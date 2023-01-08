@@ -3,7 +3,8 @@
    
     @include mq(tablet) {
         display: flex;
-        text-align: center;
+        // text-align: center;
+        align-items: center;
     }
 }
 .header {
