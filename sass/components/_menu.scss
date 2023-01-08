@@ -1,0 +1,142 @@
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  @media (max-width: 767px) {
+    .menu {
+      display: none;
+    }
+  }
+  
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  //  margin-left: auto;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    // border-radius: 50%;
+    outline: none;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+  .menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .menu .link:hover,
+  .menu .link:focus {
+    text-decoration: underline;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+   fill: rgba(33, 150, 243, 1);
+  }
+  
+  .menu__container {
+    
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #FFFF;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu__container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu__container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+    
+  }
+  
+  .mobile__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: auto;
+
+    .link {
+        color: rgba(33, 33, 33, 1);
+        font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+    }
+  }
+
+  .tel {
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    color: rgba(33, 150, 243, 1);
+    margin-bottom: 32px;
+
+  }
+  .mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 0.04;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  .mobile__menu .link,
+  .mobile__contacts .link,
+  .mobile__socials .link {
+    display: block;
+    padding: 10px;
+    // color: rgba(33, 150, 243, 1);
+    
+    text-decoration: none;
+  }
+
+  .mobile__socials {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    
+    .mobile__socials-item {
+        &:not(:last-child) {
+            margin-right: 10px;
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+          }
+    }
+   .link {
+    padding: 0;
+    padding-right: 10px;
+    color: rgba(33, 150, 243, 1)
+  
+}
+  }
