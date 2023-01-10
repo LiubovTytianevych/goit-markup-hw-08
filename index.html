@@ -33,29 +33,30 @@
               <a href="#Контакти" class="nav__link link">Контакти</a>
             </li>
           </ul>
-        
-          <div class="menu">
-            <button
-              class="menu-toggle js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
-              <svg
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
         </nav>
+        <!-- burger menu start -->
+        <div class="menu">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <!-- burger menu and -->
         <ul class="address__list list">
           <li class="address__item">
             <a href="mailto:info@devstudio.com" class="address__link link"
@@ -145,10 +146,10 @@
             <li class="examples__item">
               <div class="activity">
                 <img
-                srcset=""
+                srcset="./images/computer.jpg 1x, ./images/computer.@2x.jpg 2x"
                   src="./images/computer.jpg"
                   alt="зображення рук на клавіатурі"
-                  width="370"
+                  width=""
                 />
                 <p class="activity__text">Десктопні додатки</p>
               </div>
@@ -156,9 +157,10 @@
             <li class="examples__item">
               <div class="activity">
                 <img
+                srcset="./images/phone.jpg 1x, ./images/phone.@2x.jpg 2x"
                   src="./images/phone.jpg"
                   alt="зображення телефоу в руках"
-                  width="370"
+                  width=""
                 />
                 <p class="activity__text">Мобільні додатки</p>
               </div>
@@ -166,9 +168,10 @@
             <li class="examples__item">
               <div class="activity">
                 <img
+                srcset="./images/tablet.jpg 1x, ./images/tablet.@2x.jpg 2x"
                   src="./images/tablet.jpg"
                   alt=" зображення планшету в руках"
-                  width="370"
+                  width=""
                 />
                 <p class="activity__text">Дизайнерські рішення</p>
               </div>
@@ -183,15 +186,15 @@
             <li class="team__item">
               <picture>
                 <!-- desktop -->
-                <source media="(min-width: 1200px)" srcset="">
+                <source media="(min-width: 1200px)" srcset="./images/team-product.lg.@1x.jpg 1x, ./images/team-product.lg.@2x.jpg 2x">
                 <!-- tablet -->
-                <source media="(min-width: 768px)" srcset="./images/team-product.jpg 1x, ./images/team-product.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/team-product.md.@1x.jpg 1x, ./images/team-product.md.@2x.jpg 2x" />
                 <!-- mobile -->
-                <source media="(max-width: 767px)" srcset="">
+                <source media="(max-width: 767px)" srcset="./images/team-product.sm.@1x.jpg 1x, ./images/team-product.sm.@2x.jpg">
               <img
                 src="./images/team-product.jpg"
                 alt="усміхненний чоловік в сорчці коричневого кольору"
-                width="270"
+                width=""
               />
             </picture>
               <div class="team__wrapper">
@@ -230,15 +233,15 @@
             <li class="team__item">
               <picture>
                 <!-- desktop -->
-                <source media="(min-width: 1200px)" srcset="">
+                <source media="(min-width: 1200px)" srcset="./images/team-frontend.lg.@1x.jpg 1x, ./images/team-frontend.lg.@2x.jpg 2x">
                 <!-- tablet -->
-                <source media="(min-width: 768px)" srcset="./images/team-frontend.jpg 1x, ./images/team-frontend.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/team-frontend.md.@1x.jpg 1x, ./images/team-frontend.md.@2x.jpg 2x" />
                 <!-- mobile -->
-                <source media="(max-width: 767px)" srcset="">
+                <source media="(max-width: 767px)" srcset="./images/team-frontend.sm.@1x.jpg 1x, ./images/team-frontend.sm.@2x.jpg 2x">
               <img
                 src="./images/team-frontend.jpg"
                 alt="усміхненна блондинка у діловому костюмі"
-                width="270"
+                width=""
               />
               </picture>
               <div class="team__wrapper">
@@ -277,15 +280,15 @@
             <li class="team__item">
               <picture>
                 <!-- desktop -->
-                <source media="(min-width: 1200px)" srcset="">
+                <source media="(min-width: 1200px)" srcset="./images/team-marketing.lg.@1x.jpg 1x, ./images/team-marketing.lg.@2x.jpg 2x">
                 <!-- tablet -->
-                <source media="(min-width: 768px)" srcset="./images/team-marketing.jpg 1x, ./images/team-marketing.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/team-marketing.md.@1x.jpg 1x, ./images/team-marketing.md.@2x.jpg 2x"/>
                 <!-- mobile -->
-                <source media="(max-width: 767px)" srcset="">
+                <source media="(max-width: 767px)" srcset="./images/team-marketing.sm.@1x.jpg 1x, ./images/team-marketing.sm.@2x.jpg 2x">
               <img
                 src="./images/team-marketing.jpg"
                 alt="усміхненний молодий чоловік у світлій сорочці"
-                width="270"
+                width=""
               />
               </picture>
               <div class="team__wrapper">
@@ -324,15 +327,15 @@
             <li class="team__item">
               <picture>
                 <!-- desktop -->
-                <source media="(min-width: 1200px)" srcset="">
+                <source media="(min-width: 1200px)" srcset="./images/team_ui-designer.lg.@1x.jpg 1x, ./images/team_ui-designer.lg.@2x.jpg 2x">
                 <!-- tablet -->
-                <source media="(min-width: 768px)" srcset="./images/team_ui-designer.jpg 1x, ./images/team_ui-designer.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/team_ui-designer.md.@1x.jpg 1x, ./images/team_ui-designer.md.@2x.jpg 2x"/>
                 <!-- mobile -->
-                <source media="(max-width: 767px)" srcset="">
+                <source media="(max-width: 767px)" srcset="./images/team_ui-designer.sm.@1x.jpg 1x, ./images/team_ui-designer.sm.@2x.jpg 2x">
               <img
                 src="./images/team_ui-designer.jpg"
                 alt="молодий чоловік у футболці чорного кольору підморкує"
-                width="270"
+                width=""
               />
               </picture>  
               <div class="team__wrapper">

@@ -429,9 +429,8 @@ img {
             align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (max-width1199.98px) {
@@ -564,6 +563,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -574,6 +580,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__form {
     margin-left: auto;
+    margin-top: 0;
   }
 }
 
@@ -587,8 +594,17 @@ img {
   margin-bottom: 20px;
 }
 
-.form__content {
-  margin-top: 20px;
+@media screen and (min-width: 768px) {
+  .form__content {
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer__button {
@@ -603,7 +619,7 @@ img {
           align-items: center;
   margin-left: 12px;
   border-radius: 4px;
-  min-width: 200px;
+  width: 200px;
   height: 50px;
   color: #ffffff;
   background-color: var(--color-button);
@@ -613,6 +629,11 @@ img {
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
+}
+@media screen and (min-width: 768px) {
+  .footer__button {
+    margin-left: 75px;
+  }
 }
 
 .footer__send-icon {
@@ -634,43 +655,34 @@ img {
 @media screen and (min-width: 768px) {
   .footer__email {
     width: 358px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__email {
-    width: 538px;
+    width: 358px;
   }
 }
-@media screen and (max-width1199.98px) {
-  .footer__email {
-    margin-bottom: 20px;
-  }
-}
-
 .footer__email::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer__email::-moz-placeholder {
   font-size: 16px;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer__email:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer__email::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer__email::placeholder {
   font-size: 16px;
   line-height: 1.2;
@@ -853,23 +865,14 @@ img {
   border: 2px solid #212121;
   border-radius: 2px;
   background-color: #fff;
+  margin-right: 8px;
 }
 
 .form__checkbox-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   color: #757575;
   letter-spacing: 0.03em;
-  gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .form__checkbox-label {
@@ -972,7 +975,7 @@ img {
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .menu {
     display: none;
   }
@@ -1132,6 +1135,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .nav__header {
+    margin-right: auto;
+  }
 }
 
 .nav__list {
@@ -1243,6 +1252,11 @@ img {
     width: 100%;
     background-position: center;
     padding: 118px 0;
+  }
+}
+@media screen and (min-widty: 1200px) {
+  .baner__header {
+    width: 1200px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1492,6 +1506,21 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.014), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.014), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 480px) {
+  .team__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
 }
 
 .team__wrapper {

@@ -23,7 +23,9 @@
        padding: 118px 0;
         
     }
-
+@media  screen and (min-widty: 1200px) {
+    width: 1200px;
+}
 @media screen and (min-width:1600px) {
         width: 1600px;
         background-position: center;

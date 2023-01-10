@@ -115,19 +115,27 @@ outline: none;
     border: 2px solid #212121;
     border-radius: 2px; 
     background-color: #fff;
+    margin-right: 8px;
 }
 .form__checkbox-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     font-size: 14px;
-     line-height: 1.71;
-     color: #757575;
-     letter-spacing: 0.03em;
-     gap: 8px;
-     @include mq(tablet) {
+    // display: flex;
+    //    align-items: center;
+    //    justify-content: center;
+       font-size: 12px;
+       line-height: 1.71;
+        color: #757575;
+        letter-spacing: 0.03em;
+    
+        @include mq(tablet) {
         font-size: 12px;
         
+       @include mq(decktop) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        gap: 8px;
+       }
      }
 }
 .form__check-box:checked + .checkbox__icon {

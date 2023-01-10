@@ -1,7 +1,10 @@
 .nav__header {
     display: flex;
     align-items: center;
-    
+    margin-right: auto;
+    @include mq(tablet) {
+        margin-right: auto;
+    }
 }
 .nav__list {
         display: none;
